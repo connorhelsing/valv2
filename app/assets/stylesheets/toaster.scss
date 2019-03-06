@@ -1,0 +1,66 @@
+/*******************************
+         TOASTER
+*******************************/
+.toaster {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.toaster > .ui.message {
+  margin: 0.5rem;
+  width: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+  z-index: 1000;
+  background: #fff;
+  border: 1px solid #DDE2E6;
+  border-left: 5px solid #303641;
+  border-radius: 4px;
+  color: #191919;
+  user-select: none;
+}
+.toaster > .ui.message p {
+  max-width: 400px;
+  line-height: 23px;
+}
+.toaster.latest-top {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+.toaster.latest-top > .ui.message {
+  margin-right: 1rem;
+}
+.toaster.latest-top > .ui.message:last-child {
+  margin-top: 0px;
+}
+.toaster.latest-right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.toaster.latest-bottom {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.toaster.latest-left {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}

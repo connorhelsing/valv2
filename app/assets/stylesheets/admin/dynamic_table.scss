@@ -1,0 +1,25 @@
+.dynamic-table-header {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.dynamic-table {
+  .ui.basic.table {
+    background-color: #fff;
+    tr td {
+      position: relative;
+    }
+  }
+  .ui.fixed.table td {
+    overflow: visible;
+  }
+}
+
+.dynamic-table-avatar {
+  height: 30px;
+  margin-bottom: -8px;
+  margin-right: 8px;
+  border-radius: 30px;
+}

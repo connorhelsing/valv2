@@ -1,0 +1,25 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ *= require semantic_compiled
+ *= require animate
+ *= require trix
+ *= require admin
+ *= require toaster
+ *= require_self
+ */
+
+// test comment
+
+@font-face {
+  font-family: 'Icons';
+  src: asset-url("icons.eot");
+  src: asset-url("icons.eot?#iefix") format('embedded-opentype'), asset-url("icons.woff2") format('woff2'), asset-url("icons.woff") format('woff'), asset-url("icons.ttf") format('truetype'), asset-url("icons.svg#icons") format('svg');
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-transform: none;
+}
+

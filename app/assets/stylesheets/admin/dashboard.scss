@@ -1,0 +1,121 @@
+// PATTERN = .name_of_type {}, could theoretically just style inside partial but doing it here gives you access
+// to scss variables and helpers...
+
+$dash-border-radius: 0.28571429rem;
+$box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+$box-shadow-hover: 0px 0px 15px 2px rgba(10, 10, 10, 0.1);
+$border: 1px solid rgba(34, 36, 38, 0.15);
+
+.dash-stats {
+  display: flex;
+  justify-content: space-between;
+  margin: -10px;
+}
+
+.dash-stat {
+  background-color: #fff;
+  border-radius: $dash-border-radius;
+  padding: 1rem;
+  margin: 10px;
+  text-align: center;
+  flex: 1;
+  box-shadow: $box-shadow;
+  border: $border;
+  transition: all 0.2s;
+  align-items: center;
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+  .big-stat {
+    font-size: 2em;
+    margin: 0;
+  }
+  .description-stat {
+    margin: 0;
+  }
+}
+
+.dash-card {
+  background-color: #fff;
+  border-radius: $dash-border-radius;
+  border: $border;
+  box-shadow: $box-shadow;
+  padding: 1rem;
+  &:hover {
+    box-shadow: $box-shadow-hover;
+  }
+}
+
+.dash-card.life-events {
+  .progress-label {
+    font-size: 10px;
+  }
+}
+
+.dash-card-header {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  .dash-card-header-image {
+    img { width: 30px; }
+  }
+  .dash-card-header-text {
+    margin-left: 0.5rem;
+    font-weight: 700;
+    margin-top: -5px;
+    margin-left: 1rem;
+  }
+  .dash-card-header-options {
+    margin-left: auto;
+    img { height: 20px; }
+    margin-top: -2px;
+  }
+}
+
+.dash-alert {
+  display: flex;
+  .circle {
+    background-color: transparent;
+  }
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.dash-alert-text {
+  span { margin-left: 1rem; }
+}
+
+.dash-alert-count {
+  margin-left: auto;
+  span { margin-right: 1rem; }
+}
+
+.dash-tips {
+  display: flex;
+  align-items: center;
+  .dash-tips-image {
+    width: 40%;
+  }
+  .dash-tips-text {
+    flex: 1;
+    margin-left: 1rem;
+  }
+}
+
+.dash-dates {
+  display: flex;
+  .circle {
+    background-color: transparent;
+  }
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.dash-date-info {
+  span { margin-left: 1rem; }
+}
+
+.dash-date-text {
+  margin-left: auto;
+  span { margin-right: 1rem; }
+}
