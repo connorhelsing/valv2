@@ -1,5 +1,5 @@
 class IncomeStatement < ApplicationRecord
-  mount_uploader :income_statement, IncomeStatementUploader
+  has_many_attached :files
 
 
 end
