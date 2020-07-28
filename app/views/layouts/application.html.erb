@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Valv2</title>
+    <title>Valuations</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <!-- You MUST include jQuery before Fomantic -->
+    <div class="ui pointing menu">
+      <a href="<%= url_for(welcome_home_path) %>"class="item">
+        Home
+      </a>
+      <a href="<%= url_for(income_statements_path) %>" class="item">
+        Income Statements
+      </a>
+      <div class="right menu">
+        <div class="item">
+          <div class="ui transparent icon input">
+            <input type="text" placeholder="Search...">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>

@@ -4,7 +4,6 @@ class IncomeStatementsController < ApplicationController
     @income_statements = IncomeStatement.all
   end
 
-
   def show
   end
 
